@@ -12,4 +12,4 @@ Vivado版本：2018.3
 
 板卡型号：xc7s15ftgb196-1
 
-仓库目录介绍：Sourcecode文件夹存放项目；ExecutableFiles存放.bit文件。
+仓库目录介绍：Sourcecode文件夹存放项目；ExecutableFiles存放.bit文件；TestVid文件夹存放测试视频。
