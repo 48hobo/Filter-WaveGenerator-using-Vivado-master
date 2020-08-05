@@ -1,0 +1,16 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Filter_WaveGenerator.srcs/sources_1/ip/Rom_Triangle/sim/Rom_Triangle.v" \
+"../../../../Filter_WaveGenerator.srcs/sources_1/ip/Rom_Square/sim/Rom_Square.v" \
+"../../../../Filter_WaveGenerator.srcs/sources_1/ip/Rom_Sin/sim/Rom_Sin.v" \
+"../../../../Filter_WaveGenerator.srcs/sources_1/imports/new/DDS_Addr_Generator.v" \
+"../../../../Filter_WaveGenerator.srcs/sources_1/imports/new/Driver_DAC.v" \
+"../../../../Filter_WaveGenerator.srcs/sources_1/imports/new/Lab_9.v" \
+"../../../../Filter_WaveGenerator.srcs/sources_1/imports/new/clk_division.v" \
+"../../../../Filter_WaveGenerator.srcs/sim_1/imports/new/TestBench.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

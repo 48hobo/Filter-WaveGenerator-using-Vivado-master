@@ -1,0 +1,50 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri Jul 31 15:59:37 2020
+# Process ID: 564
+# Current directory: D:/Xilinx/VivadoProjects/Filter_WaveGenerator
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7464 D:\Xilinx\VivadoProjects\Filter_WaveGenerator\Filter_WaveGenerator.xpr
+# Log file: D:/Xilinx/VivadoProjects/Filter_WaveGenerator/vivado.log
+# Journal file: D:/Xilinx/VivadoProjects/Filter_WaveGenerator\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source tb_Top.tcl
+relaunch_sim
+run 10 ms
+relaunch_sim
+run 10 ms
+relaunch_sim
+relaunch_sim
+run 10 ms
+relaunch_sim
+run 10 ms
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_UART [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+close_sim
+launch_simulation
+source tb_UART.tcl
+run 10 ms
+relaunch_sim
+run 10 ms
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_Top [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source tb_Top.tcl
+run 10 ms
+close_sim

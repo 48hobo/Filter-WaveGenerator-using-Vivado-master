@@ -1,0 +1,642 @@
+
+*** Running vivado
+    with args -log Filter_WaveGenerator.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Filter_WaveGenerator.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source Filter_WaveGenerator.tcl -notrace
+Command: synth_design -top Filter_WaveGenerator -part xc7s15ftgb196-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s15'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s15'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 8268 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 446.023 ; gain = 102.234
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Filter_WaveGenerator' [D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.srcs/sources_1/new/Filter_WaveGenerator.v:23]
+	Parameter CLK_FREQUENCE bound to: 100000000 - type: integer 
+	Parameter BAUD_RATE bound to: 115200 - type: integer 
+	Parameter PARITY bound to: NONE - type: string 
+	Parameter FRAME_WD bound to: 8 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'clk_division' [D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.srcs/sources_1/imports/new/clk_division.v:23]
+WARNING: [Synth 8-5788] Register cnt_reg in module clk_division is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.srcs/sources_1/imports/new/clk_division.v:65]
+INFO: [Synth 8-6155] done synthesizing module 'clk_division' (1#1) [D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.srcs/sources_1/imports/new/clk_division.v:23]
+INFO: [Synth 8-6157] synthesizing module 'fir_compiler_0' [D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.runs/synth_1/.Xil/Vivado-17404-DESKTOP-A2DLOUC/realtime/fir_compiler_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fir_compiler_0' (2#1) [D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.runs/synth_1/.Xil/Vivado-17404-DESKTOP-A2DLOUC/realtime/fir_compiler_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'UART' [D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.srcs/sources_1/imports/UART/UART.srcs/sources_1/new/UART.v:23]
+	Parameter CLK_FREQUENCE bound to: 100000000 - type: integer 
+	Parameter BAUD_RATE bound to: 115200 - type: integer 
+	Parameter PARITY bound to: NONE - type: string 
+	Parameter FRAME_WD bound to: 8 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'uart_frame_tx' [D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.srcs/sources_1/imports/UART/UART.srcs/sources_1/imports/rtl/uart_frame_tx.v:15]
+	Parameter CLK_FREQUENCE bound to: 100000000 - type: integer 
+	Parameter BAUD_RATE bound to: 115200 - type: integer 
+	Parameter PARITY bound to: NONE - type: string 
+	Parameter FRAME_WD bound to: 8 - type: integer 
+	Parameter IDLE bound to: 6'b000000 
+	Parameter READY bound to: 6'b000001 
+	Parameter START_BIT bound to: 6'b000010 
+	Parameter SHIFT_PRO bound to: 6'b000100 
+	Parameter PARITY_BIT bound to: 6'b001000 
+	Parameter STOP_BIT bound to: 6'b010000 
+	Parameter DONE bound to: 6'b100000 
+INFO: [Synth 8-6157] synthesizing module 'tx_clk_gen' [D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.srcs/sources_1/imports/UART/UART.srcs/sources_1/imports/rtl/tx_clk_gen.v:15]
+	Parameter CLK_FREQUENCE bound to: 100000000 - type: integer 
+	Parameter BAUD_RATE bound to: 115200 - type: integer 
+	Parameter BPS_CNT bound to: 867 - type: integer 
+	Parameter BPS_WD bound to: 10 - type: integer 
+INFO: [Synth 8-226] default block is never used [D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.srcs/sources_1/imports/UART/UART.srcs/sources_1/imports/rtl/tx_clk_gen.v:43]
+INFO: [Synth 8-6155] done synthesizing module 'tx_clk_gen' (3#1) [D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.srcs/sources_1/imports/UART/UART.srcs/sources_1/imports/rtl/tx_clk_gen.v:15]
+WARNING: [Synth 8-6014] Unused sequential element parity_even_reg was removed.  [D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.srcs/sources_1/imports/UART/UART.srcs/sources_1/imports/rtl/uart_frame_tx.v:108]
+INFO: [Synth 8-6155] done synthesizing module 'uart_frame_tx' (4#1) [D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.srcs/sources_1/imports/UART/UART.srcs/sources_1/imports/rtl/uart_frame_tx.v:15]
+INFO: [Synth 8-6157] synthesizing module 'uart_frame_rx' [D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.srcs/sources_1/imports/UART/UART.srcs/sources_1/imports/rtl/uart_frame_rx.v:16]
+	Parameter CLK_FREQUENCE bound to: 100000000 - type: integer 
+	Parameter BAUD_RATE bound to: 115200 - type: integer 
+	Parameter PARITY bound to: NONE - type: string 
+	Parameter FRAME_WD bound to: 8 - type: integer 
+	Parameter IDLE bound to: 5'b00000 
+	Parameter START_BIT bound to: 5'b00001 
+	Parameter DATA_FRAME bound to: 5'b00010 
+	Parameter PARITY_BIT bound to: 5'b00100 
+	Parameter STOP_BIT bound to: 5'b01000 
+	Parameter DONE bound to: 5'b10000 
+INFO: [Synth 8-226] default block is never used [D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.srcs/sources_1/imports/UART/UART.srcs/sources_1/imports/rtl/uart_frame_rx.v:143]
+INFO: [Synth 8-6157] synthesizing module 'rx_clk_gen' [D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.srcs/sources_1/imports/UART/UART.srcs/sources_1/imports/rtl/rx_clk_gen.v:16]
+	Parameter CLK_FREQUENCE bound to: 100000000 - type: integer 
+	Parameter BAUD_RATE bound to: 115200 - type: integer 
+	Parameter SMP_CLK_CNT bound to: 95 - type: integer 
+	Parameter CNT_WIDTH bound to: 7 - type: integer 
+INFO: [Synth 8-226] default block is never used [D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.srcs/sources_1/imports/UART/UART.srcs/sources_1/imports/rtl/rx_clk_gen.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'rx_clk_gen' (5#1) [D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.srcs/sources_1/imports/UART/UART.srcs/sources_1/imports/rtl/rx_clk_gen.v:16]
+INFO: [Synth 8-6155] done synthesizing module 'uart_frame_rx' (6#1) [D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.srcs/sources_1/imports/UART/UART.srcs/sources_1/imports/rtl/uart_frame_rx.v:16]
+INFO: [Synth 8-6155] done synthesizing module 'UART' (7#1) [D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.srcs/sources_1/imports/UART/UART.srcs/sources_1/new/UART.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Driver_DAC' [D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.srcs/sources_1/imports/new/Driver_DAC.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.srcs/sources_1/imports/new/Driver_DAC.v:64]
+INFO: [Synth 8-6157] synthesizing module 'DDS_Addr_Generator' [D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.srcs/sources_1/imports/new/DDS_Addr_Generator.v:23]
+	Parameter NWORD bound to: 256 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'DDS_Addr_Generator' (8#1) [D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.srcs/sources_1/imports/new/DDS_Addr_Generator.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Rom_Sin' [D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.runs/synth_1/.Xil/Vivado-17404-DESKTOP-A2DLOUC/realtime/Rom_Sin_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Rom_Sin' (9#1) [D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.runs/synth_1/.Xil/Vivado-17404-DESKTOP-A2DLOUC/realtime/Rom_Sin_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Rom_Square' [D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.runs/synth_1/.Xil/Vivado-17404-DESKTOP-A2DLOUC/realtime/Rom_Square_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Rom_Square' (10#1) [D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.runs/synth_1/.Xil/Vivado-17404-DESKTOP-A2DLOUC/realtime/Rom_Square_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Rom_Triangle' [D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.runs/synth_1/.Xil/Vivado-17404-DESKTOP-A2DLOUC/realtime/Rom_Triangle_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Rom_Triangle' (11#1) [D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.runs/synth_1/.Xil/Vivado-17404-DESKTOP-A2DLOUC/realtime/Rom_Triangle_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Driver_DAC' (12#1) [D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.srcs/sources_1/imports/new/Driver_DAC.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Filter_WaveGenerator' (13#1) [D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.srcs/sources_1/new/Filter_WaveGenerator.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 501.434 ; gain = 157.645
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 501.434 ; gain = 157.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 501.434 ; gain = 157.645
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7s15ftgb196-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.srcs/sources_1/ip/Rom_Sin/Rom_Sin/Rom_Sin_in_context.xdc] for cell 'Driver_DAC0/Sin_Rom'
+Finished Parsing XDC File [d:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.srcs/sources_1/ip/Rom_Sin/Rom_Sin/Rom_Sin_in_context.xdc] for cell 'Driver_DAC0/Sin_Rom'
+Parsing XDC File [d:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.srcs/sources_1/ip/Rom_Square/Rom_Square/Rom_Square_in_context.xdc] for cell 'Driver_DAC0/Square_Rom'
+Finished Parsing XDC File [d:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.srcs/sources_1/ip/Rom_Square/Rom_Square/Rom_Square_in_context.xdc] for cell 'Driver_DAC0/Square_Rom'
+Parsing XDC File [d:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.srcs/sources_1/ip/Rom_Triangle/Rom_Triangle/Rom_Triangle_in_context.xdc] for cell 'Driver_DAC0/Triangle_Rom'
+Finished Parsing XDC File [d:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.srcs/sources_1/ip/Rom_Triangle/Rom_Triangle/Rom_Triangle_in_context.xdc] for cell 'Driver_DAC0/Triangle_Rom'
+Parsing XDC File [d:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.srcs/sources_1/ip/fir_compiler_0/fir_compiler_0/fir_compiler_0_in_context.xdc] for cell 'fir_inst'
+Finished Parsing XDC File [d:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.srcs/sources_1/ip/fir_compiler_0/fir_compiler_0/fir_compiler_0_in_context.xdc] for cell 'fir_inst'
+Parsing XDC File [D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.srcs/constrs_1/imports/new/system.xdc]
+Finished Parsing XDC File [D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.srcs/constrs_1/imports/new/system.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.srcs/constrs_1/imports/new/system.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Filter_WaveGenerator_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Filter_WaveGenerator_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 798.816 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 798.816 ; gain = 455.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s15ftgb196-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 798.816 ; gain = 455.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for Driver_DAC0/Sin_Rom. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Driver_DAC0/Square_Rom. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Driver_DAC0/Triangle_Rom. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for fir_inst. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 798.816 ; gain = 455.027
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "bps_clk" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'cstate_reg' in module 'uart_frame_tx'
+INFO: [Synth 8-5546] ROM "tx_done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "nstate0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nstate0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nstate0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nstate0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nstate0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nstate0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "sample_clk" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'cstate_reg' in module 'uart_frame_rx'
+INFO: [Synth 8-5544] ROM "sample_result" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "rx_frame" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "frame_error" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nstate0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nstate0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nstate0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nstate0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nstate0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "WaveMode" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                          0000001 |                           000000
+                   READY |                          0000010 |                           000001
+               START_BIT |                          0000100 |                           000010
+               SHIFT_PRO |                          0001000 |                           000100
+              PARITY_BIT |                          0010000 |                           001000
+                STOP_BIT |                          0100000 |                           010000
+                    DONE |                          1000000 |                           100000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'cstate_reg' using encoding 'one-hot' in module 'uart_frame_tx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              000 |                            00000
+               START_BIT |                              001 |                            00001
+              DATA_FRAME |                              010 |                            00010
+                STOP_BIT |                              011 |                            01000
+                    DONE |                              100 |                            10000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'cstate_reg' using encoding 'sequential' in module 'uart_frame_rx'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 798.816 ; gain = 455.027
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 9     
+	   2 Input     31 Bit       Adders := 3     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---XORs : 
+	                8 Bit    Wide XORs := 1     
++---Registers : 
+	               96 Bit    Registers := 1     
+	               31 Bit    Registers := 6     
+	               24 Bit    Registers := 1     
+	               16 Bit    Registers := 2     
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 6     
+	                7 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 25    
++---Muxes : 
+	   5 Input     31 Bit        Muxes := 3     
+	   2 Input     10 Bit        Muxes := 1     
+	   7 Input      8 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 4     
+	   7 Input      7 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 7     
+	   2 Input      6 Bit        Muxes := 1     
+	   7 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 3     
+	   5 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 6     
+	   2 Input      3 Bit        Muxes := 6     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 4     
+	   3 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 20    
+	   8 Input      1 Bit        Muxes := 6     
+	   3 Input      1 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 3     
+	  18 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Filter_WaveGenerator 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   2 Input     16 Bit       Adders := 1     
++---Registers : 
+	               96 Bit    Registers := 1     
+	               24 Bit    Registers := 1     
+	               16 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module clk_division 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     31 Bit       Adders := 1     
++---Registers : 
+	               31 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   5 Input     31 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module tx_clk_gen 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module uart_frame_tx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   7 Input      7 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 6     
+	   2 Input      6 Bit        Muxes := 1     
+	   7 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 5     
+Module rx_clk_gen 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	                7 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module uart_frame_rx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---XORs : 
+	                8 Bit    Wide XORs := 1     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   7 Input      8 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   5 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 5     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 4     
+	   2 Input      2 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+	   3 Input      1 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 3     
+	   8 Input      1 Bit        Muxes := 1     
+Module DDS_Addr_Generator 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	                8 Bit    Registers := 1     
+Module Driver_DAC 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 3     
+	   2 Input      5 Bit        Muxes := 1     
+	  18 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 20 (col length:20)
+BRAMs: 20 (col length: RAMB18 20 RAMB36 10)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-6014] Unused sequential element uart_frame_rx_inst/frame_error_reg was removed.  [D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.srcs/sources_1/imports/UART/UART.srcs/sources_1/imports/rtl/uart_frame_rx.v:161]
+INFO: [Synth 8-5546] ROM "uart_frame_tx_inst/tx_clk_gen_inst/bps_clk" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "uart_frame_rx_inst/rx_clk_gen_inst/sample_clk" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3886] merging instance 'Driver_DAC0/DDS_Addr_Generator0/clk_division0/freq_num_reg[27]' (FDC) to 'Driver_DAC0/DDS_Addr_Generator0/clk_division0/freq_num_reg[30]'
+INFO: [Synth 8-3886] merging instance 'Driver_DAC0/DDS_Addr_Generator0/clk_division0/freq_num_reg[28]' (FDC) to 'Driver_DAC0/DDS_Addr_Generator0/clk_division0/freq_num_reg[30]'
+INFO: [Synth 8-3886] merging instance 'Driver_DAC0/DDS_Addr_Generator0/clk_division0/freq_num_reg[29]' (FDC) to 'Driver_DAC0/DDS_Addr_Generator0/clk_division0/freq_num_reg[30]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Driver_DAC0/\DDS_Addr_Generator0/clk_division0/freq_num_reg[30] )
+WARNING: [Synth 8-3332] Sequential element (DDS_Addr_Generator0/clk_division0/freq_num_reg[30]) is unused and will be removed from module Driver_DAC.
+WARNING: [Synth 8-3332] Sequential element (DAC_Sync_reg) is unused and will be removed from module Driver_DAC.
+INFO: [Synth 8-3886] merging instance 'clk_fir_inst/freq_num_reg[1]' (FDC) to 'clk_fir_inst/freq_num_reg[30]'
+INFO: [Synth 8-3886] merging instance 'clk_fir_inst/freq_num_reg[2]' (FDC) to 'clk_fir_inst/freq_num_reg[30]'
+INFO: [Synth 8-3886] merging instance 'clk_fir_inst/freq_num_reg[3]' (FDC) to 'clk_fir_inst/freq_num_reg[30]'
+INFO: [Synth 8-3886] merging instance 'clk_fir_inst/freq_num_reg[4]' (FDC) to 'clk_fir_inst/freq_num_reg[13]'
+INFO: [Synth 8-3886] merging instance 'clk_fir_inst/freq_num_reg[5]' (FDC) to 'clk_fir_inst/freq_num_reg[30]'
+INFO: [Synth 8-3886] merging instance 'clk_fir_inst/freq_num_reg[6]' (FDC) to 'clk_fir_inst/freq_num_reg[30]'
+INFO: [Synth 8-3886] merging instance 'clk_fir_inst/freq_num_reg[7]' (FDC) to 'clk_fir_inst/freq_num_reg[30]'
+INFO: [Synth 8-3886] merging instance 'clk_fir_inst/freq_num_reg[8]' (FDC) to 'clk_fir_inst/freq_num_reg[13]'
+INFO: [Synth 8-3886] merging instance 'clk_fir_inst/freq_num_reg[9]' (FDC) to 'clk_fir_inst/freq_num_reg[13]'
+INFO: [Synth 8-3886] merging instance 'clk_fir_inst/freq_num_reg[10]' (FDC) to 'clk_fir_inst/freq_num_reg[13]'
+INFO: [Synth 8-3886] merging instance 'clk_fir_inst/freq_num_reg[11]' (FDC) to 'clk_fir_inst/freq_num_reg[30]'
+INFO: [Synth 8-3886] merging instance 'clk_fir_inst/freq_num_reg[12]' (FDC) to 'clk_fir_inst/freq_num_reg[30]'
+INFO: [Synth 8-3886] merging instance 'clk_fir_inst/freq_num_reg[14]' (FDC) to 'clk_fir_inst/freq_num_reg[30]'
+INFO: [Synth 8-3886] merging instance 'clk_fir_inst/freq_num_reg[15]' (FDC) to 'clk_fir_inst/freq_num_reg[30]'
+INFO: [Synth 8-3886] merging instance 'clk_fir_inst/freq_num_reg[16]' (FDC) to 'clk_fir_inst/freq_num_reg[30]'
+INFO: [Synth 8-3886] merging instance 'clk_fir_inst/freq_num_reg[17]' (FDC) to 'clk_fir_inst/freq_num_reg[30]'
+INFO: [Synth 8-3886] merging instance 'clk_fir_inst/freq_num_reg[18]' (FDC) to 'clk_fir_inst/freq_num_reg[30]'
+INFO: [Synth 8-3886] merging instance 'clk_fir_inst/freq_num_reg[19]' (FDC) to 'clk_fir_inst/freq_num_reg[30]'
+INFO: [Synth 8-3886] merging instance 'clk_fir_inst/freq_num_reg[20]' (FDC) to 'clk_fir_inst/freq_num_reg[30]'
+INFO: [Synth 8-3886] merging instance 'clk_fir_inst/freq_num_reg[21]' (FDC) to 'clk_fir_inst/freq_num_reg[30]'
+INFO: [Synth 8-3886] merging instance 'clk_fir_inst/freq_num_reg[22]' (FDC) to 'clk_fir_inst/freq_num_reg[30]'
+INFO: [Synth 8-3886] merging instance 'clk_fir_inst/freq_num_reg[23]' (FDC) to 'clk_fir_inst/freq_num_reg[30]'
+INFO: [Synth 8-3886] merging instance 'clk_fir_inst/freq_num_reg[24]' (FDC) to 'clk_fir_inst/freq_num_reg[30]'
+INFO: [Synth 8-3886] merging instance 'clk_fir_inst/freq_num_reg[25]' (FDC) to 'clk_fir_inst/freq_num_reg[30]'
+INFO: [Synth 8-3886] merging instance 'clk_fir_inst/freq_num_reg[26]' (FDC) to 'clk_fir_inst/freq_num_reg[30]'
+INFO: [Synth 8-3886] merging instance 'clk_fir_inst/freq_num_reg[27]' (FDC) to 'clk_fir_inst/freq_num_reg[30]'
+INFO: [Synth 8-3886] merging instance 'clk_fir_inst/freq_num_reg[28]' (FDC) to 'clk_fir_inst/freq_num_reg[30]'
+INFO: [Synth 8-3886] merging instance 'clk_fir_inst/freq_num_reg[29]' (FDC) to 'clk_fir_inst/freq_num_reg[30]'
+INFO: [Synth 8-3886] merging instance 'clk_fir_inst/freq_num_reg[30]' (FDC) to 'clk_fir_inst/freq_num_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (clk_fir_inst/\freq_num_reg[0] )
+INFO: [Synth 8-3886] merging instance 'clk_div50/freq_num_reg[2]' (FDC) to 'clk_div50/freq_num_reg[30]'
+INFO: [Synth 8-3886] merging instance 'clk_div50/freq_num_reg[3]' (FDC) to 'clk_div50/freq_num_reg[30]'
+INFO: [Synth 8-3886] merging instance 'clk_div50/freq_num_reg[4]' (FDC) to 'clk_div50/freq_num_reg[30]'
+INFO: [Synth 8-3886] merging instance 'clk_div50/freq_num_reg[5]' (FDC) to 'clk_div50/freq_num_reg[30]'
+INFO: [Synth 8-3886] merging instance 'clk_div50/freq_num_reg[6]' (FDC) to 'clk_div50/freq_num_reg[30]'
+INFO: [Synth 8-3886] merging instance 'clk_div50/freq_num_reg[7]' (FDC) to 'clk_div50/freq_num_reg[30]'
+INFO: [Synth 8-3886] merging instance 'clk_div50/freq_num_reg[8]' (FDC) to 'clk_div50/freq_num_reg[30]'
+INFO: [Synth 8-3886] merging instance 'clk_div50/freq_num_reg[9]' (FDC) to 'clk_div50/freq_num_reg[30]'
+INFO: [Synth 8-3886] merging instance 'clk_div50/freq_num_reg[10]' (FDC) to 'clk_div50/freq_num_reg[30]'
+INFO: [Synth 8-3886] merging instance 'clk_div50/freq_num_reg[11]' (FDC) to 'clk_div50/freq_num_reg[30]'
+INFO: [Synth 8-3886] merging instance 'clk_div50/freq_num_reg[12]' (FDC) to 'clk_div50/freq_num_reg[30]'
+INFO: [Synth 8-3886] merging instance 'clk_div50/freq_num_reg[13]' (FDC) to 'clk_div50/freq_num_reg[30]'
+INFO: [Synth 8-3886] merging instance 'clk_div50/freq_num_reg[14]' (FDC) to 'clk_div50/freq_num_reg[30]'
+INFO: [Synth 8-3886] merging instance 'clk_div50/freq_num_reg[15]' (FDC) to 'clk_div50/freq_num_reg[30]'
+INFO: [Synth 8-3886] merging instance 'clk_div50/freq_num_reg[16]' (FDC) to 'clk_div50/freq_num_reg[30]'
+INFO: [Synth 8-3886] merging instance 'clk_div50/freq_num_reg[17]' (FDC) to 'clk_div50/freq_num_reg[30]'
+INFO: [Synth 8-3886] merging instance 'clk_div50/freq_num_reg[18]' (FDC) to 'clk_div50/freq_num_reg[30]'
+INFO: [Synth 8-3886] merging instance 'clk_div50/freq_num_reg[19]' (FDC) to 'clk_div50/freq_num_reg[30]'
+INFO: [Synth 8-3886] merging instance 'clk_div50/freq_num_reg[20]' (FDC) to 'clk_div50/freq_num_reg[30]'
+INFO: [Synth 8-3886] merging instance 'clk_div50/freq_num_reg[21]' (FDC) to 'clk_div50/freq_num_reg[30]'
+INFO: [Synth 8-3886] merging instance 'clk_div50/freq_num_reg[22]' (FDC) to 'clk_div50/freq_num_reg[30]'
+INFO: [Synth 8-3886] merging instance 'clk_div50/freq_num_reg[23]' (FDC) to 'clk_div50/freq_num_reg[30]'
+INFO: [Synth 8-3886] merging instance 'clk_div50/freq_num_reg[24]' (FDC) to 'clk_div50/freq_num_reg[30]'
+INFO: [Synth 8-3886] merging instance 'clk_div50/freq_num_reg[25]' (FDC) to 'clk_div50/freq_num_reg[30]'
+INFO: [Synth 8-3886] merging instance 'clk_div50/freq_num_reg[26]' (FDC) to 'clk_div50/freq_num_reg[30]'
+INFO: [Synth 8-3886] merging instance 'clk_div50/freq_num_reg[27]' (FDC) to 'clk_div50/freq_num_reg[30]'
+INFO: [Synth 8-3886] merging instance 'clk_div50/freq_num_reg[28]' (FDC) to 'clk_div50/freq_num_reg[30]'
+INFO: [Synth 8-3886] merging instance 'clk_div50/freq_num_reg[29]' (FDC) to 'clk_div50/freq_num_reg[30]'
+INFO: [Synth 8-3886] merging instance 'clk_div50/freq_num_reg[30]' (FDC) to 'clk_div50/freq_num_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (clk_div50/\freq_num_reg[0] )
+WARNING: [Synth 8-3332] Sequential element (freq_num_reg[0]) is unused and will be removed from module clk_division__2.
+WARNING: [Synth 8-3332] Sequential element (flag_reg) is unused and will be removed from module clk_division__2.
+WARNING: [Synth 8-3332] Sequential element (freq_num_reg[0]) is unused and will be removed from module clk_division.
+WARNING: [Synth 8-3332] Sequential element (flag_reg) is unused and will be removed from module clk_division.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 798.816 ; gain = 455.027
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 801.766 ; gain = 457.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 804.496 ; gain = 460.707
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'clk_fir_inst/freq_num_reg[13]' (FDC) to 'clk_div50/freq_num_reg[1]'
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 838.926 ; gain = 495.137
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 838.926 ; gain = 495.137
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 838.926 ; gain = 495.137
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 838.926 ; gain = 495.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 838.926 ; gain = 495.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 838.926 ; gain = 495.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 838.926 ; gain = 495.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------+----------+
+|      |BlackBox name  |Instances |
++------+---------------+----------+
+|1     |fir_compiler_0 |         1|
+|2     |Rom_Sin        |         1|
+|3     |Rom_Square     |         1|
+|4     |Rom_Triangle   |         1|
++------+---------------+----------+
+
+Report Cell Usage: 
++------+---------------+------+
+|      |Cell           |Count |
++------+---------------+------+
+|1     |Rom_Sin        |     1|
+|2     |Rom_Square     |     1|
+|3     |Rom_Triangle   |     1|
+|4     |fir_compiler_0 |     1|
+|5     |BUFG           |     2|
+|6     |CARRY4         |   728|
+|7     |LUT1           |   214|
+|8     |LUT2           |   350|
+|9     |LUT3           |  1973|
+|10    |LUT4           |   188|
+|11    |LUT5           |   110|
+|12    |LUT6           |   126|
+|13    |FDCE           |    74|
+|14    |FDPE           |     2|
+|15    |FDRE           |   425|
+|16    |IBUF           |     4|
+|17    |OBUF           |     3|
++------+---------------+------+
+
+Report Instance Areas: 
++------+------------------------+-------------------+------+
+|      |Instance                |Module             |Cells |
++------+------------------------+-------------------+------+
+|1     |top                     |                   |  4249|
+|2     |  Driver_DAC0           |Driver_DAC         |  1226|
+|3     |    DDS_Addr_Generator0 |DDS_Addr_Generator |  1166|
+|4     |      clk_division0     |clk_division_1     |   257|
+|5     |  UART_inst             |UART               |   175|
+|6     |    uart_frame_rx_inst  |uart_frame_rx      |    91|
+|7     |      rx_clk_gen_inst   |rx_clk_gen         |    45|
+|8     |    uart_frame_tx_inst  |uart_frame_tx      |    84|
+|9     |      tx_clk_gen_inst   |tx_clk_gen         |    55|
+|10    |  clk_div50             |clk_division       |   122|
+|11    |  clk_fir_inst          |clk_division_0     |   121|
++------+------------------------+-------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 838.926 ; gain = 495.137
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:31 . Memory (MB): peak = 838.926 ; gain = 197.754
+Synthesis Optimization Complete : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 838.926 ; gain = 495.137
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 732 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+131 Infos, 9 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:43 . Memory (MB): peak = 838.926 ; gain = 507.496
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.runs/synth_1/Filter_WaveGenerator.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Filter_WaveGenerator_utilization_synth.rpt -pb Filter_WaveGenerator_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.050 . Memory (MB): peak = 838.926 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Aug  1 18:20:48 2020...

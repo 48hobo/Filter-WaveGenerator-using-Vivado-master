@@ -1,0 +1,100 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri Jul 31 10:32:14 2020
+# Process ID: 1252
+# Current directory: D:/Xilinx/VivadoProjects/Filter_WaveGenerator
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3800 D:\Xilinx\VivadoProjects\Filter_WaveGenerator\Filter_WaveGenerator.xpr
+# Log file: D:/Xilinx/VivadoProjects/Filter_WaveGenerator/vivado.log
+# Journal file: D:/Xilinx/VivadoProjects/Filter_WaveGenerator\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.xpr
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_Top [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+launch_simulation
+launch_simulation
+source tb_Top.tcl
+run 10 ms
+relaunch_sim
+run 10 ms
+run 10 ms
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+relaunch_sim
+run 20 ms
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+relaunch_sim
+run 20 ms
+close_sim
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+launch_simulation
+source tb_Top.tcl
+run 20 ms
+relaunch_sim
+run 20 ms
+relaunch_sim
+run 20 ms
+relaunch_sim
+relaunch_sim
+run 20 ms
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+relaunch_sim
+relaunch_sim
+close_sim
+launch_simulation
+launch_simulation
+source tb_Top.tcl
+relaunch_sim
+run 1.3 s
+close_sim
+launch_simulation
+source tb_Top.tcl
+relaunch_sim
+run 10 ms
+relaunch_sim
+run 10 ms
+close_sim
+launch_simulation
+source tb_Top.tcl
+run 10 ms
+relaunch_sim
+run 10 ms
+close_sim
+launch_simulation
+source tb_Top.tcl
+relaunch_sim
+run 10 ms
+run 10 ms
+relaunch_sim
+run 10 ms
+relaunch_sim
+run 10 ms
+relaunch_sim
+close_sim
+launch_simulation
+source tb_Top.tcl
+run 10 ms
+relaunch_sim
+run 10 ms
+close_sim

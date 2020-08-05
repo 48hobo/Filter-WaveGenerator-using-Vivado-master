@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7s15ftgb196-1" LaunchTime="1596277190">
+  <File Type="BITSTR-BMM" Name="Filter_WaveGenerator_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="Filter_WaveGenerator_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="Filter_WaveGenerator_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="Filter_WaveGenerator_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="Filter_WaveGenerator.tcl"/>
+  <File Type="OPT-TIMING" Name="Filter_WaveGenerator_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="Filter_WaveGenerator_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="Filter_WaveGenerator_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="Filter_WaveGenerator_reports.tcl"/>
+  <File Type="OPT-DRC" Name="Filter_WaveGenerator_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="Filter_WaveGenerator.hwdef"/>
+  <File Type="PWROPT-DCP" Name="Filter_WaveGenerator_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="Filter_WaveGenerator_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="Filter_WaveGenerator_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="Filter_WaveGenerator_placed.dcp"/>
+  <File Type="PLACE-IO" Name="Filter_WaveGenerator_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="Filter_WaveGenerator_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="Filter_WaveGenerator_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="Filter_WaveGenerator_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="Filter_WaveGenerator_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="Filter_WaveGenerator_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="Filter_WaveGenerator_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="Filter_WaveGenerator.bgn"/>
+  <File Type="PLACE-TIMING" Name="Filter_WaveGenerator_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="Filter_WaveGenerator_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="Filter_WaveGenerator.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="Filter_WaveGenerator_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="Filter_WaveGenerator_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="Filter_WaveGenerator_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="Filter_WaveGenerator.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="Filter_WaveGenerator_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="Filter_WaveGenerator_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="Filter_WaveGenerator_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="Filter_WaveGenerator_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="Filter_WaveGenerator_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="Filter_WaveGenerator_drc_routed.pb"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="Filter_WaveGenerator.ltx"/>
+  <File Type="ROUTE-DRC-RPX" Name="Filter_WaveGenerator_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="Filter_WaveGenerator.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="Filter_WaveGenerator_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="Filter_WaveGenerator_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-SYSDEF" Name="Filter_WaveGenerator.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="Filter_WaveGenerator_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="Filter_WaveGenerator_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="Filter_WaveGenerator_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="Filter_WaveGenerator_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="Filter_WaveGenerator_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="Filter_WaveGenerator_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="Filter_WaveGenerator_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="Filter_WaveGenerator_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="Filter_WaveGenerator_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="Filter_WaveGenerator_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="Filter_WaveGenerator_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="Filter_WaveGenerator_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="Filter_WaveGenerator_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="Filter_WaveGenerator_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="Filter_WaveGenerator_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="Filter_WaveGenerator_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="Filter_WaveGenerator_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="Filter_WaveGenerator_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="Filter_WaveGenerator_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="Filter_WaveGenerator.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="Filter_WaveGenerator_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="Filter_WaveGenerator.rbt"/>
+  <File Type="BITSTR-NKY" Name="Filter_WaveGenerator.nky"/>
+  <File Type="BG-DRC" Name="Filter_WaveGenerator.drc"/>
+  <File Type="RDI-RDI" Name="Filter_WaveGenerator.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/new/DDS_Addr_Generator.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Lab_9/Lab_9.srcs/sources_1/new/DDS_Addr_Generator.v"/>
+        <Attr Name="ImportTime" Val="1595990808"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/Driver_DAC.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Lab_9/Lab_9.srcs/sources_1/new/Driver_DAC.v"/>
+        <Attr Name="ImportTime" Val="1595990815"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/UART/UART.srcs/sources_1/new/UART.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../UART/UART.srcs/sources_1/new/UART.v"/>
+        <Attr Name="ImportTime" Val="1595922133"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/clk_division.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Lab_9/Lab_9.srcs/sources_1/new/clk_division.v"/>
+        <Attr Name="ImportTime" Val="1595473387"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/UART/UART.srcs/sources_1/imports/rtl/rx_clk_gen.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../UART/UART.srcs/sources_1/imports/rtl/rx_clk_gen.v"/>
+        <Attr Name="ImportTime" Val="1564747093"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/UART/UART.srcs/sources_1/imports/rtl/tx_clk_gen.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../UART/UART.srcs/sources_1/imports/rtl/tx_clk_gen.v"/>
+        <Attr Name="ImportTime" Val="1595841610"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/UART/UART.srcs/sources_1/imports/rtl/uart_frame_rx.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../UART/UART.srcs/sources_1/imports/rtl/uart_frame_rx.v"/>
+        <Attr Name="ImportTime" Val="1595857238"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/UART/UART.srcs/sources_1/imports/rtl/uart_frame_tx.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../UART/UART.srcs/sources_1/imports/rtl/uart_frame_tx.v"/>
+        <Attr Name="ImportTime" Val="1595839992"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Filter_WaveGenerator.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/VivadoProjects/fir.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../fir.v"/>
+        <Attr Name="ImportTime" Val="1596125943"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/Lab_9.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Lab_9/Lab_9.srcs/sources_1/new/Lab_9.v"/>
+        <Attr Name="ImportTime" Val="1595990810"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/UART/UART.sim/sim_1/behav/xsim/glbl.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../UART/UART.sim/sim_1/behav/xsim/glbl.v"/>
+        <Attr Name="ImportTime" Val="1529022455"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/UART/UART.srcs/sim_1/imports/tb/uart_loop.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../UART/UART.srcs/sim_1/imports/tb/uart_loop.v"/>
+        <Attr Name="ImportTime" Val="1564747093"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/Sin_Wave_Rom.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/Square_Wave_Rom.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/Triangle_Wave_Rom.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/FIR_coef_hamming_5k_signed.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/FIR_coef_hamming_500_signed.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/FIR_coef_hamming_500_signed_10kSampling.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="Filter_WaveGenerator"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/new/system.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../UART/UART.srcs/constrs_1/new/system.xdc"/>
+        <Attr Name="ImportTime" Val="1595852625"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="Rom_Sin"/>
+  <BlockFileSet Type="BlockSrcs" Name="Rom_Square"/>
+  <BlockFileSet Type="BlockSrcs" Name="Rom_Triangle"/>
+  <BlockFileSet Type="BlockSrcs" Name="fir_compiler_0"/>
+</GenRun>

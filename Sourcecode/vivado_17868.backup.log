@@ -1,0 +1,253 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Jul 30 21:32:35 2020
+# Process ID: 17868
+# Current directory: D:/Xilinx/VivadoProjects/Filter_WaveGenerator
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17648 D:\Xilinx\VivadoProjects\Filter_WaveGenerator\Filter_WaveGenerator.xpr
+# Log file: D:/Xilinx/VivadoProjects/Filter_WaveGenerator/vivado.log
+# Journal file: D:/Xilinx/VivadoProjects/Filter_WaveGenerator\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 823.688 ; gain = 142.379
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_Top' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.sim/sim_1/behav/xsim/Rom_Sin.mif'
+INFO: [SIM-utils-43] Exported 'D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.sim/sim_1/behav/xsim/Sin_Wave_Rom.coe'
+INFO: [SIM-utils-43] Exported 'D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.sim/sim_1/behav/xsim/Rom_Square.mif'
+INFO: [SIM-utils-43] Exported 'D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.sim/sim_1/behav/xsim/Square_Wave_Rom.coe'
+INFO: [SIM-utils-43] Exported 'D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.sim/sim_1/behav/xsim/Rom_Triangle.mif'
+INFO: [SIM-utils-43] Exported 'D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.sim/sim_1/behav/xsim/Triangle_Wave_Rom.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_Top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.srcs/sources_1/ip/Rom_Triangle/sim/Rom_Triangle.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Rom_Triangle
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.srcs/sources_1/ip/Rom_Square/sim/Rom_Square.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Rom_Square
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.srcs/sources_1/ip/Rom_Sin/sim/Rom_Sin.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Rom_Sin
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.srcs/sources_1/imports/new/DDS_Addr_Generator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DDS_Addr_Generator
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.srcs/sources_1/imports/new/Driver_DAC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Driver_DAC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.srcs/sources_1/new/Filter_WaveGenerator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Filter_WaveGenerator
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.srcs/sources_1/imports/UART/UART.srcs/sources_1/new/UART.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.srcs/sources_1/imports/new/clk_division.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_division
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.srcs/sources_1/imports/UART/UART.srcs/sources_1/imports/rtl/rx_clk_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rx_clk_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.srcs/sources_1/imports/UART/UART.srcs/sources_1/imports/rtl/tx_clk_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tx_clk_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.srcs/sources_1/imports/UART/UART.srcs/sources_1/imports/rtl/uart_frame_rx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_frame_rx
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.srcs/sources_1/imports/UART/UART.srcs/sources_1/imports/rtl/uart_frame_tx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_frame_tx
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.srcs/sim_1/new/tb_Top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_Top
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 9f5ed87ab75244418efefae0cd05a944 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_1 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_Top_behav xil_defaultlib.tb_Top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port i_rst [D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.srcs/sources_1/new/Filter_WaveGenerator.v:152]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 31 for port i_clk_mode [D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.srcs/sources_1/new/Filter_WaveGenerator.v:153]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port i_rst [D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.srcs/sources_1/imports/new/DDS_Addr_Generator.v:38]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.tx_clk_gen(BAUD_RATE=115200)
+Compiling module xil_defaultlib.uart_frame_tx(BAUD_RATE=115200)
+Compiling module xil_defaultlib.rx_clk_gen(CLK_FREQUENCE=1000000...
+Compiling module xil_defaultlib.uart_frame_rx(BAUD_RATE=115200)
+Compiling module xil_defaultlib.UART
+Compiling module xil_defaultlib.clk_division
+Compiling module xil_defaultlib.DDS_Addr_Generator
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(C_FAMILY="spa...
+Compiling module xil_defaultlib.Rom_Sin
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(C_FAMILY="spa...
+Compiling module xil_defaultlib.Rom_Square
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(C_FAMILY="spa...
+Compiling module xil_defaultlib.Rom_Triangle
+Compiling module xil_defaultlib.Driver_DAC
+Compiling module xil_defaultlib.Filter_WaveGenerator
+Compiling module xil_defaultlib.tb_Top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_Top_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_Top_behav -key {Behavioral:sim_1:Functional:tb_Top} -tclbatch {tb_Top.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source tb_Top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_Top.FWG_inst.Driver_DAC0.Sin_Rom.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_Top.FWG_inst.Driver_DAC0.Square_Rom.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_Top.FWG_inst.Driver_DAC0.Triangle_Rom.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_Top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 870.691 ; gain = 19.645
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_Top' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.sim/sim_1/behav/xsim/Rom_Sin.mif'
+INFO: [SIM-utils-43] Exported 'D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.sim/sim_1/behav/xsim/Sin_Wave_Rom.coe'
+INFO: [SIM-utils-43] Exported 'D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.sim/sim_1/behav/xsim/Rom_Square.mif'
+INFO: [SIM-utils-43] Exported 'D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.sim/sim_1/behav/xsim/Square_Wave_Rom.coe'
+INFO: [SIM-utils-43] Exported 'D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.sim/sim_1/behav/xsim/Rom_Triangle.mif'
+INFO: [SIM-utils-43] Exported 'D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.sim/sim_1/behav/xsim/Triangle_Wave_Rom.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_Top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.srcs/sources_1/ip/Rom_Triangle/sim/Rom_Triangle.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Rom_Triangle
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.srcs/sources_1/ip/Rom_Square/sim/Rom_Square.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Rom_Square
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.srcs/sources_1/ip/Rom_Sin/sim/Rom_Sin.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Rom_Sin
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.srcs/sources_1/imports/new/DDS_Addr_Generator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DDS_Addr_Generator
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.srcs/sources_1/imports/new/Driver_DAC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Driver_DAC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.srcs/sources_1/new/Filter_WaveGenerator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Filter_WaveGenerator
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.srcs/sources_1/imports/UART/UART.srcs/sources_1/new/UART.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.srcs/sources_1/imports/new/clk_division.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_division
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.srcs/sources_1/imports/UART/UART.srcs/sources_1/imports/rtl/rx_clk_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rx_clk_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.srcs/sources_1/imports/UART/UART.srcs/sources_1/imports/rtl/tx_clk_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tx_clk_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.srcs/sources_1/imports/UART/UART.srcs/sources_1/imports/rtl/uart_frame_rx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_frame_rx
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.srcs/sources_1/imports/UART/UART.srcs/sources_1/imports/rtl/uart_frame_tx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_frame_tx
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.srcs/sim_1/new/tb_Top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_Top
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 9f5ed87ab75244418efefae0cd05a944 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_1 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_Top_behav xil_defaultlib.tb_Top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port i_rst [D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.srcs/sources_1/new/Filter_WaveGenerator.v:152]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 31 for port i_clk_mode [D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.srcs/sources_1/new/Filter_WaveGenerator.v:153]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port i_rst [D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.srcs/sources_1/imports/new/DDS_Addr_Generator.v:38]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.tx_clk_gen(BAUD_RATE=115200)
+Compiling module xil_defaultlib.uart_frame_tx(BAUD_RATE=115200)
+Compiling module xil_defaultlib.rx_clk_gen(CLK_FREQUENCE=1000000...
+Compiling module xil_defaultlib.uart_frame_rx(BAUD_RATE=115200)
+Compiling module xil_defaultlib.UART
+Compiling module xil_defaultlib.clk_division
+Compiling module xil_defaultlib.DDS_Addr_Generator
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(C_FAMILY="spa...
+Compiling module xil_defaultlib.Rom_Sin
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(C_FAMILY="spa...
+Compiling module xil_defaultlib.Rom_Square
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(C_FAMILY="spa...
+Compiling module xil_defaultlib.Rom_Triangle
+Compiling module xil_defaultlib.Driver_DAC
+Compiling module xil_defaultlib.Filter_WaveGenerator
+Compiling module xil_defaultlib.tb_Top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_Top_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_Top.FWG_inst.Driver_DAC0.Sin_Rom.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_Top.FWG_inst.Driver_DAC0.Square_Rom.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_Top.FWG_inst.Driver_DAC0.Triangle_Rom.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 879.488 ; gain = 0.000
+run 10 ms
+run: Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 884.500 ; gain = 5.012
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.runs/synth_1
+
+launch_runs impl_1 -jobs 2
+[Thu Jul 30 21:39:37 2020] Launched synth_1...
+Run output will be captured here: D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.runs/synth_1/runme.log
+[Thu Jul 30 21:39:37 2020] Launched impl_1...
+Run output will be captured here: D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Thu Jul 30 21:41:33 2020] Launched impl_1...
+Run output will be captured here: D:/Xilinx/VivadoProjects/Filter_WaveGenerator/Filter_WaveGenerator.runs/impl_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Jul 30 22:09:17 2020...
